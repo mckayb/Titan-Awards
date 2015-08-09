@@ -1,0 +1,79 @@
+html,body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    padding-top: 70px;
+}
+
+nav.navbar > div.container > div.navbar-header > a.pull-left > img {
+    width: 50px;
+    padding: 5px;
+}
+
+.container > h4 {
+    text-align: center;
+}
+
+#titan_image {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+}
+
+#titan_image::after {
+    content: "";
+    background: url(../images/titan-background.png) no-repeat;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+/** Honorees CSS **/
+.profile {
+    background-size: cover;
+    width: 200px;
+    height: 280px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile#larry {
+    background-image: url(../images/Larry.png);
+}
+
+.profile#dieter {
+    background-image: url(../images/Dieter.png);
+}
+
+.profile#pat {
+    background-image: url(../images/Pat.png);
+}
+
+.container.honorees > .row > .col-md-4 {
+    text-align: center;
+}
+
+/*.container.honorees > .row > .col-md-4 > .profile_comment {*/
+    /*padding-bottom: 10px;*/
+/*}*/
+
+.container.honorees > .row > .col-md-4 > .honoree_information {
+    padding-top: 10px;
+    text-align: left;
+
+}
+
+
+
+
+
+
+/** End Honorees CSS **/
