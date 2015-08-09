@@ -29,6 +29,12 @@ button.btn-transparent:hover {
     border: 1px solid red;
 }
 
+.container.about,
+.container.contact,
+.container.honorees {
+    margin-top: 20px;
+}
+
 #titan_image {
     height: 100%;
     position: relative;
@@ -98,7 +104,12 @@ button.btn-transparent:hover {
 .container.honorees > .row > .col-md-4 > .honoree_information {
     padding-top: 10px;
     text-align: left;
+    height: 250px;
+    overflow: hidden;
+}
 
+.container.honorees > .row > .col-md-4 > button.more_details {
+    margin-top: 15px;
 }
 /** End Honorees CSS **/
 
