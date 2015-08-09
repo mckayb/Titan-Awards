@@ -12,27 +12,61 @@ nav.navbar > div.container > div.navbar-header > a.pull-left > img {
     padding: 5px;
 }
 
-.container > h4 {
-    text-align: center;
+button.btn.btn-transparent {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    transition: color 1.5s, border 1.5s;
+}
+
+button.btn-transparent.dark {
+    border: 1px solid black;
+    color: black;
+}
+
+button.btn-transparent:hover {
+    color: red;
+    border: 1px solid red;
 }
 
 #titan_image {
-    width: 100%;
     height: 100%;
-    display: block;
     position: relative;
+    background-color: rgba(0,0,0,0.8);
+    overflow: hidden;
 }
 
-#titan_image::after {
-    content: "";
-    background: url(../images/titan-background.png) no-repeat;
-    opacity: 0.5;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+#titan_image:after {
+    content: ' ';
+    display: block;
     position: absolute;
-    z-index: -1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.6;
+    background-image: url('../images/titan-background.png');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+}
+
+#titan_image > div.info {
+    position: relative;
+    top: 25%;
+    transform: translate(0, -25%);
+    text-align: center;
+    color: white;
+    z-index: 2;
+}
+
+.big_text {
+    font-size: 64px;
+}
+
+.container > h4 {
+    text-align: center;
 }
 
 /** Honorees CSS **/
@@ -61,19 +95,19 @@ nav.navbar > div.container > div.navbar-header > a.pull-left > img {
     text-align: center;
 }
 
-/*.container.honorees > .row > .col-md-4 > .profile_comment {*/
-    /*padding-bottom: 10px;*/
-/*}*/
-
 .container.honorees > .row > .col-md-4 > .honoree_information {
     padding-top: 10px;
     text-align: left;
 
 }
-
-
-
-
-
-
 /** End Honorees CSS **/
+
+/** Begin Contact CSS **/
+.container.contact {
+    padding-bottom: 60px;
+}
+
+.container.contact > .row > div {
+    margin-top: 15px;
+}
+/** End Contact CSS **/
