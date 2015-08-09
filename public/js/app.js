@@ -20,3 +20,7 @@ $(".more_details").on("click", function() {
         $(this).text("Show Details");
     }
 });
+
+function jumpTo( key ) {
+    window.location.hash = key;
+}
