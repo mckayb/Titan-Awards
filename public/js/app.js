@@ -26,5 +26,5 @@ $(".more_details").on("click", function() {
 });
 
 function jumpTo( key ) {
-    window.location.hash = key;
+    $("a[href='#contact']")[0].click();
 }
