@@ -16,7 +16,7 @@ button.btn.btn-transparent {
     background: transparent;
     border: 1px solid white;
     color: white;
-    transition: color 1.5s, border 1.5s;
+    transition: color 1s, border 1s;
 }
 
 button.btn-transparent.dark {
