@@ -1,10 +1,14 @@
+html {
+    font-size: 12px;
+}
+
 html,body {
     width: 100%;
     height: 100%;
 }
 
 body {
-    padding-top: 70px;
+    padding-top: 63px;
 }
 
 nav.navbar > div.container > div.navbar-header > a.pull-left > img {
@@ -68,7 +72,7 @@ button.btn-transparent:hover {
 }
 
 .big_text {
-    font-size: 64px;
+    font-size: 5rem;
 }
 
 .container > h4 {
@@ -111,7 +115,7 @@ a.anchor {
 .container.honorees > .row > .col-md-4 > .honoree_information {
     padding-top: 10px;
     text-align: left;
-    height: 250px;
+    height: 180px;
     overflow: hidden;
 }
 
@@ -132,6 +136,7 @@ a.anchor {
 
 .container.honorees > .row > .col-md-4 > button.more_details {
     margin-top: 15px;
+    margin-bottom: 10px;
 }
 /** End Honorees CSS **/
 

@@ -18,7 +18,7 @@ $(".more_details").on("click", function() {
         honoreeInformation.css({
             overflow: "hidden"
         }).animate({
-            height: "250px"
+            height: "180px"
         }, time);
         honoreeInformation.removeClass( "no_after" );
         $(this).text("Show Details");
