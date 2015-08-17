@@ -9,11 +9,21 @@ html,body {
 
 body {
     padding-top: 63px;
+    position: relative;
 }
 
 nav.navbar > div.container > div.navbar-header > a.pull-left > img {
     width: 50px;
     padding: 5px;
+}
+
+nav.navbar > div.container > div#navbar > ul.nav > li {
+    height: 100%;
+    line-height: 31px;
+}
+
+nav.navbar > div.container > div#navbar > ul.nav > li > a {
+    line-height: 35px;
 }
 
 button.btn.btn-transparent {
